@@ -18,7 +18,7 @@ public class Ville {
 		this.name = name;
 	}
 	
-	public String getArete() {
+	public List<Arete> getArete() {
 		return this.arete;
 	}
 	
