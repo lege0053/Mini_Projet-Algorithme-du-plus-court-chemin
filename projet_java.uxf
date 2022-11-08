@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>13</x>
+      <y>0</y>
+      <w>299</w>
+      <h>221</h>
+    </coordinates>
+    <panel_attributes>Ville
+--
+-name: string
+-aretes: List&lt;Arete&gt;
+--
++addAretes(ville, distance)
++getName()
++setName()
++getAretes()
++setAretes(List&lt;Arete&gt;)
++toString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>13</x>
+      <y>247</y>
+      <w>299</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>Carte
+--
+-villes: List&lt;Ville&gt;
+--
++addVille(Ville)
++getVilles()
++setVilles(List&lt;Ville&gt;)
++toString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>0</y>
+      <w>299</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Arete
+--
+-ville1: Ville
+-ville2: Ville
+-distance: integer
+--
++getVille1()
++getVille2()
++getDistance()
++setVille1(Ville)
++setVille2(Ville)
++setDistance(distance)
++toString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>286</y>
+      <w>299</w>
+      <h>273</h>
+    </coordinates>
+    <panel_attributes>Itineraire
+--
+-carte: Carte
+-source: Ville
+-destination: Ville
+--
++getCarte()
++getSource()
++getDestination()
++setCarte(Carte)
++setSource(Ville)
++setDestination(Ville)
++plusCourtChemin()
++toString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
