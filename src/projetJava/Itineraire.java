@@ -36,6 +36,10 @@ public class Itineraire {
 		this.destination = destination;
 	}
 	
+	public String plusCourtChemin() {
+		return "";
+	}
+	
 	@Override
 	public String toString() {
 		return "Itineraire [carte=" + carte + ", source=" + source + ", destination=" + destination + "]";
