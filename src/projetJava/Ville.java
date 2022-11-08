@@ -1,11 +1,12 @@
 package projetJava;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ville {
 
 	private String name;
-	private List<Arete> arete;
+	private List<Arete> arete = new ArrayList<Arete>();
 	
 	public Ville(String name, List<Arete> arete){
 		this.name = name;
@@ -14,6 +15,7 @@ public class Ville {
 	
 	public Ville(String name){
 		this.name = name;
+		this.addAretes(this, 0);
 	}
 	
 	public String getName() {
