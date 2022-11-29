@@ -6,11 +6,11 @@ import java.util.List;
 public class Ville {
 
 	private String name;
-	private List<Arete> arete = new ArrayList<Arete>();
+	private ArrayList<Arete> aretes = new ArrayList<Arete>();
 	
-	public Ville(String name, List<Arete> arete){
+	public Ville(String name, ArrayList<Arete> arete){
 		this.name = name;
-		this.arete = arete;
+		this.aretes = arete;
 	}
 	
 	public Ville(String name){
@@ -26,22 +26,26 @@ public class Ville {
 		this.name = name;
 	}
 
-	public List<Arete> getArete() {
-		return arete;
+	public List<Arete> getAretes() {
+		return aretes;
 	}
 
-	public void setArete(List<Arete> arete) {
-		this.arete = arete;
+	public void setAretes(ArrayList<Arete> arete) {
+		this.aretes = arete;
 	}
 	
 	public void addAretes(Ville ville, int distance) {
-		this.arete.add(new Arete(this, ville, distance));
+		this.aretes.add(new Arete(this, ville, distance));
 	}
 	
 	@Override
 	public String toString() {
-		return "Ville [name=" + name + ", arete=" + arete + "]";
+		return "Ville [name=" + this.name + "]";
 	}
-
-   
+	
+	public static void main(String[] args) {
+		Ville lille = new Ville("Lille");
+		System.out.println(lille);
+	}
+	  
 }

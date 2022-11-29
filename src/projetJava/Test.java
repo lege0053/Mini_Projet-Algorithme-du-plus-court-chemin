@@ -90,26 +90,29 @@ public class Test {
 		nice.addAretes(marseille, 203);
 		
 		// Liste des villes
-		List<Ville> listVilles = new ArrayList<Ville>();
-		listVilles.add(lille);
-		listVilles.add(rouen);
-		listVilles.add(paris);
-		listVilles.add(brest);
-		listVilles.add(rennes);
-		listVilles.add(strasbourg);
-		listVilles.add(nantes);
-		listVilles.add(dijon);
-		listVilles.add(limoges);
-		listVilles.add(clermont);
-		listVilles.add(lyon);
-		listVilles.add(bordeaux);
-		listVilles.add(grenoble);
-		listVilles.add(toulouse);
-		listVilles.add(montpellier);
-		listVilles.add(marseille);
-		listVilles.add(nice);
+		ArrayList<Ville> villes = new ArrayList<Ville>();
+		villes.add(lille);
+		villes.add(rouen);
+		villes.add(paris);
+		villes.add(brest);
+		villes.add(rennes);
+		villes.add(strasbourg);
+		villes.add(nantes);
+		villes.add(dijon);
+		villes.add(limoges);
+		villes.add(clermont);
+		villes.add(lyon);
+		villes.add(bordeaux);
+		villes.add(grenoble);
+		villes.add(toulouse);
+		villes.add(montpellier);
+		villes.add(marseille);
+		villes.add(nice);
+		
 		
 		//Initialisation de la carte
-		Carte carte = new Carte(listVilles);	
+		Carte carte = new Carte(villes);	
+		
+		System.out.println(carte);
 	}
 }

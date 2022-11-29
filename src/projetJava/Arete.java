@@ -40,5 +40,13 @@ public class Arete {
 	public String toString() {
 		return "Arete [ville1=" + ville1 + ", ville2=" + ville2 + ", distance=" + distance + "]";
 	}
+	
+	public static void main(String[] args) {
+		Ville lille = new Ville("Lille");
+		Ville paris = new Ville("Paris");
+		Arete a = new Arete(lille, paris, 200);
+		
+		System.out.println(a);
+	}
 
 }

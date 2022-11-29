@@ -1,12 +1,12 @@
 package projetJava;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Carte {
 
-	private List<Ville> villes;
+	private ArrayList<Ville> villes;
 	
-	public Carte(List<Ville> villes) {
+	public Carte(ArrayList<Ville> villes) {
 		this.villes = villes;
 	}
 	
@@ -14,11 +14,11 @@ public class Carte {
 		this.villes.add(ville);
 	}
 	
-	public List<Ville> getVilles() {
+	public ArrayList<Ville> getVilles() {
 		return this.villes;
 	}
 
-	public void setVilles(List<Ville> villes) {
+	public void setVilles(ArrayList<Ville> villes) {
 		this.villes = villes;
 	}
 	
